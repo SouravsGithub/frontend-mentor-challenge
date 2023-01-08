@@ -38,6 +38,10 @@ body {
   color: #959eac;
   text-decoration: none;
 }
+.number-container > .round-container:focus {
+  color: white;
+  background-color: #959eac;
+}
 .submit {
   display: block;
   text-decoration: none;
@@ -49,25 +53,26 @@ body {
   font-size: 1rem;
   border-radius: 2em;
   letter-spacing: 2px;
-}
-.submit:hover {
-  color: #fb7413;
-  background: white;
-}
-.number-container > .round-container:hover {
-  color: white;
-  background: #fb7413;
-}
-.number-container > .round-container:focus {
-  color: white;
-  background-color: #959eac;
+  font-weight: bold;
 }
 
-@media (min-width: 371px) and (max-width: 1440px) {
+@media (min-width: 371px) and (max-width: 1550px) {
   .card {
     padding: 3rem;
   }
   .submit {
     text-align: center;
+  }
+  .submit:hover {
+    color: #fb7413;
+    background: white;
+  }
+  .number-container > .round-container:hover {
+    color: white;
+    background: #fb7413;
+  }
+  .number-container > .round-container:focus {
+    color: white;
+    background-color: #959eac;
   }
 }
