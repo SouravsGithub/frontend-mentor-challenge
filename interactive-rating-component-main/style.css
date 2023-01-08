@@ -8,18 +8,19 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
-.card {
+.ratings-card {
+  display: none;
   padding: 1.8rem;
   background: hsl(213, 19%, 18%);
   color: white;
   border-radius: 20px;
   max-width: 22rem;
 }
-.card h1 {
+.ratings-card h1 {
   font-size: 1.6rem;
   margin-top: 12%;
 }
-.card p {
+.ratings-card p {
   color: hsl(217, 12%, 63%);
   line-height: 1.5;
 }
@@ -33,7 +34,7 @@ body {
 }
 .round-container {
   padding: 1rem;
-  background-color: hsl(213, 18%, 22%);
+  background-color: #2e3742;
   border-radius: 50%;
   color: #959eac;
   text-decoration: none;
@@ -56,8 +57,50 @@ body {
   font-weight: bold;
 }
 
+/* Thanks Card Styles */
+
+/* .thanks-card {
+  display: none;
+} */
+
+.thanks-container {
+  padding: 1.8rem;
+  background: #252d37;
+  color: white;
+  border-radius: 20px;
+  max-width: 21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thanks-container svg {
+  margin-bottom: 1.5rem;
+}
+.thanks-container h1 {
+  margin: 2rem 0;
+  margin-bottom: 0;
+}
+.thanks-container span {
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5em;
+  background-color: #2e3742;
+  vertical-align: middle;
+  color: #fb7413;
+}
+.thanks-container h1 {
+  font-size: 1.6rem;
+}
+.thanks-container p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Media Queries */
+
 @media (min-width: 371px) and (max-width: 1550px) {
-  .card {
+  .ratings-card,
+  .thanks-container {
     padding: 3rem;
   }
   .submit {
