@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.card-container {
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+  width: 85%;
+}
+.card-container h1 {
+  text-align: center;
+  padding: 0;
+  padding-top: 45%;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.main-img,
+.side-image {
+  position: absolute;
+  top: -21%;
+  left: 10%;
+  max-width: 80%;
+}
+.side-image {
+  top: 1.5%;
+  left: 10%;
+}
+.qa-container {
+  padding: 1rem 1.5rem;
+  padding-bottom: 2.5rem;
+}
+.question-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e7e9;
+}
+.question-box > p {
+  font-size: 0.9rem;
+  flex-basis: 15rem;
+}
+.question-box > svg {
+  margin-top: 2%;
+}
+.answer-box {
+  display: none;
+  font-size: 0.9rem;
+  width: 15rem;
+}
